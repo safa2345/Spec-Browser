@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1050082343895",
+    "project_id": "browser-c0dd5",
+    "storage_bucket": "browser-c0dd5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1050082343895:android:e3b11cc8c6013afce32992",
+        "android_client_info": {
+          "package_name": "org.mir.browser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1050082343895-8ue3kcj0bst9hs6ublecvmtjdlh0p6vu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLNdh0zN6kyBXoujpf4JcDX6fu-CJEz7E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1050082343895-8ue3kcj0bst9hs6ublecvmtjdlh0p6vu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity"
+    android:background="#20B6FA">
+
+    <TextView
+        android:id="@+id/develop_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DEVELOPED BY"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/safa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shamaun Safa Hridi"
+        android:textSize="25dp"
+        android:layout_below="@+id/develop_id"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="80dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/tanim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mir Tanim Ahmed"
+        android:textSize="25dp"
+        android:layout_below="@+id/safa"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="80dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/tamal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tamal Ahmed"
+        android:textSize="25dp"
+        android:layout_below="@+id/tanim"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="80dp"
+        android:textStyle="italic" />
+
+    <ImageView
+        android:id="@+id/spec"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:src="@drawable/official_logo"
+        android:layout_below="@+id/tamal"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="80dp" />
+
+    <TextView
+        android:id="@+id/ver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Version 1.1"
+        android:textSize="25dp"
+        android:layout_below="@+id/spec"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="120dp" />
+
+</RelativeLayout>

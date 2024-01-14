@@ -1,0 +1,88 @@
+body {
+  max-width: 0;
+  padding: 0;
+}
+
+.userBackground {
+  height: 100%;
+  width: 100%;
+  background-color: #29539b;
+  background-image: linear-gradient(315deg, #29539b 0%, #1e3b70 74%);
+}
+
+.linkBackground {
+  height: 170px;
+  width: 170px;
+  background-color: #2f4353;
+  background-image: linear-gradient(315deg, #2f4353 0%, #d2ccc4 74%);
+  opacity: 1;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #111b34;
+  margin: 7px;
+  margin-left: 22px;
+}
+
+.fa-youtube {
+  color: #e84118;
+}
+
+.fa-instagram {
+  color: #e84393;
+}
+
+.fa-linkedin {
+  color: #0097e6;
+}
+
+.fa-twitter {
+  color: #0097e6;
+}
+
+.fa-wikipedia-w {
+  color: #ffffff;
+}
+
+.fa-amazon {
+  color: #ff6600;
+}
+
+.fa-google {
+  color: #4285f4, #db4437, #f4b400, #0f9d58;
+}
+
+.fa-discord {
+  color: #7289da;
+}
+
+.fa-facebook {
+  color: #3b5998;
+}
+
+.firstRow {
+  width: 45%;
+  float: left;
+}
+
+.secondRow {
+  width: 45%;
+  float: left;
+}
+
+.thirdRow {
+  width: 45%;
+  float: left;
+}
+
+.itemMargin {
+  margin-right: 65px;
+}

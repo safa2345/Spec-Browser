@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.mir.browser">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/official_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/official_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Browser"
+        android:usesCleartextTraffic="true">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".LoadingScreenActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".AboutActivity"
+            android:exported="true" />
+        <activity
+            android:name=".UserActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Sync.SignInActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Sync.SyncActivity"
+            android:exported="true" />
+        <activity
+            android:name=".History.HistoryActivity"
+            android:exported="true"
+            android:label="@string/title_activity_history"
+            android:theme="@style/Theme.Browser.NoActionBar" />
+        <activity
+            android:name=".Bookmarks.BookmarkActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Downloads.DownloadActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="true"
+            android:label="@string/title_activity_settings" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true">
+        </activity>
+    </application>
+
+</manifest>

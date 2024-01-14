@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BrowserFragment"
+    android:id="@+id/browser_container">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#48483e"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/url_edit_text"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_corner"
+            android:fontFamily="@font/fira_mono_medium"
+            android:hint="@string/url_hint"
+            android:imeOptions="actionDone"
+            android:inputType="textNoSuggestions"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="5dp"
+            android:singleLine="true"
+            android:textColor="#afb1b0"
+            android:textColorHint="#afb1b0"
+            android:textSize="21sp"
+            android:selectAllOnFocus="true">
+        </com.google.android.material.textfield.TextInputEditText>
+
+        <ImageButton
+            android:id="@+id/bookmark_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="2dp"
+            android:background="#48483e"
+            android:src="@drawable/ic_baseline_bookmark_border_36">
+        </ImageButton>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:paddingTop="5dp"
+        android:id="@+id/tab_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_bar"
+        android:background="#272822">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/tab_recycler_view"
+            android:layout_width="370dp"
+            android:layout_height="40dp"
+            android:background="#272822"
+            android:paddingStart="5dp"
+            android:paddingRight="10dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <ImageButton
+            android:id="@+id/add_tab_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tab_recycler_view"
+            android:src="@drawable/ic_baseline_add_24"
+            android:background="#272822"
+            android:layout_marginTop="6dp">
+        </ImageButton>
+
+    </RelativeLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/webview_pager"
+        android:layout_width="match_parent"
+        android:layout_height="570dp"
+        android:layout_below="@+id/tab_container">
+    </androidx.viewpager2.widget.ViewPager2>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/webview_pager"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#272822">
+
+            <ImageButton
+                android:id="@+id/back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="40dp"
+                android:background="#272822"
+                android:src="@drawable/ic_baseline_arrow_back_36">
+
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/forward_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="60dp"
+                android:background="#272822"
+                android:src="@drawable/ic_baseline_arrow_forward_36">
+
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/home_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="60dp"
+                android:background="#272822"
+                android:src="@drawable/ic_baseline_home_36">
+
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/refresh_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="40dp"
+                android:background="#272822"
+                android:src="@drawable/ic_baseline_refresh_36">
+
+            </ImageButton>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+</FrameLayout>

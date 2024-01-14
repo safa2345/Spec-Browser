@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="display_text"
+        android:summaryOff="Invisible"
+        android:summaryOn="Visible"
+        android:title="Tab Title" />
+    <ListPreference
+        android:entries="@array/search_entries"
+        android:entryValues="@array/search_values"
+        android:key="search_preference"
+        android:title="Search Engines" />
+
+    <SwitchPreferenceCompat
+        android:key="dark_mode"
+        android:title="Dark Mode"
+        android:summaryOn="Dark Mode is Enabled"
+        android:summaryOff="Dark Mode is Disabled"
+        android:defaultValue="false"/>
+
+    <SwitchPreferenceCompat
+        android:key="javascript"
+        android:title="JavaScript"
+        android:summaryOn="Allow sites to run Javascript (recommended)"
+        android:summaryOff="Blocked"
+        android:defaultValue="true"/>
+
+
+
+</androidx.preference.PreferenceScreen>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/new_tab"
+        android:title="New Tab">
+    </item>
+    <item
+        android:id="@+id/new_private_tab"
+        android:title="New Private Tab">
+    </item>
+    <item
+        android:id="@+id/sync"
+        android:title="Sync">
+    </item>
+    <item
+        android:id="@+id/history_item"
+        android:title="History">
+    </item>
+    <item
+        android:id="@+id/bookmark_item"
+        android:title="Bookmarks">
+    </item>
+    <item
+        android:id="@+id/downloads_item"
+        android:title="Downloads">
+    </item>
+
+    <item
+        android:id="@+id/desktop_site"
+        android:title="Desktop Site"
+        android:checkable="true">
+    </item>
+
+    <item
+        android:id="@+id/settings"
+        android:title="Settings">
+    </item>
+
+    <item
+        android:id="@+id/about"
+        android:title="About">
+    </item>
+
+    <item
+        android:id="@+id/exit"
+        android:title="Exit">
+    </item>
+
+</menu>
